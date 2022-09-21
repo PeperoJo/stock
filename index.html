@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="assets/css/main.css">
 
@@ -28,57 +30,138 @@
     <![endif]-->
   </head>
   <body class="d-none">
-    <div class="container my-5">
-      <div>
-        Day:HH:MM:SS: MS
+
+    <div class="container">
+      <div class="panel">
+        <h1>CHNSP</h1>
+
+        <div class="pt-4" id="tracker_info">
+          <div class="card1 pb-4" id="info_time">
+            <div class="row">
+              <div class="col" id="time_day">
+                <h3>Day</h3>
+                <span class="val2" id="val_time_day">213</span>
+              </div>
+              <div class="col" id="time_hour">
+                <h3>Hrs</h3>
+                <span class="val2" id="val_time_hour">23</span>
+              </div>
+              <div class="col" id="time_min">
+                <h3>Min</h3>
+                <span class="val2" id="val_time_min">39</span>
+              </div>
+              <div class="col" id="time_sec">
+                <h3>Sec</h3>
+                <span class="val2" id="val_time_sec">11.9</span>
+              </div>
+            </div>
+            <span class="info_label">
+              Since September 12, 2022 09:00
+            </span>
+          </div>
+
+          <div class="card1 pb-4" id="info_value">
+            <div class="row">
+              <div class="col" id="value_latest">
+                <h3>Gained Value</h3>
+                <span class="val1" id="val_value_latest">$1,427.1899</span>
+              </div>
+            </div>
+            <span class="info_label">
+              TOTAL EQUITY: $239,200
+            </span>
+          </div>
+
+          <div class="card1 pb-4" id="info_progress">
+            <div class="progress_bar">
+              <div class="progress_bar_val">
+              </div>
+            </div>
+          </div>
+
+          <div class="card1 pb-4" id="info_share">
+            <div class="row">
+              <div class="col" id="share_gained">
+                <h3>Gained Shares</h3>
+                <span class="val2" id="val_share_gained">274.57141</span>
+              </div>
+              <div class="col" id="share_total">
+                <h3>Gained Value</h3>
+                <span class="val2" id="val_share_total">46,000</span>
+              </div>
+            </div>
+            <span class="info_label" id="label_percentage">
+              0.596 % gained
+            </span>
+          </div>
+
+          <div class="card1" id="info_valuation">
+            <div class="row">
+              <div class="col" id="valuation_current">
+                <h3>Current Valuation</h3>
+                <span class="val2" id="val_valuation_current">$1.372B</span>
+              </div>
+              <div class="col" id="valuation_share">
+                <h3>Share Price</h3>
+                <span class="val2" id="val_valuation_share">$5.20</span>
+              </div>
+            </div>
+            <span class="info_label">
+              As of 10/07/2021
+            </span>
+          </div>
+        </div>
+
       </div>
 
-      <div id="time-diff"></div>
+      <hr class="divider"/>
 
-      <br><br>
+      <div class="panel">
+        <h2>Growth Calculation</h2>
 
-      <div id="total-share">
-        Total: 46,000 shares
+        <div class="pt-4" id="growth_info">
+          
+          <div class="card2 mb-3">
+            <div class="row pb-4">
+              <div class="col growth_title">
+                <h3>Latest</h3>
+                <span class="val3 color-purple">x1.00</span>
+              </div>
+              <div class="col">
+                <h3>Valuation</h3>
+                <span class="val3">$1.372B</span>
+              </div>
+              <div class="col">
+                <h3>Share</h3>
+                <span class="val3">$5.20</span>
+              </div>
+              <div class="col">
+                <h3>Equity</h3>
+                <span class="val3">$1,239K</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" id="value_latest">
+                <h3>Est. Gained Value</h3>
+                <span class="val2">$1,427.1899</span>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+
+      </div>
       </div>
 
-      <br><br>
-
-      <div id="gained-share">
-        Gained: <span id="calc-gained"></span>
-      </div>
-
-      <br><br>
-
-      <div id="gained-value">
-        Gained: $<span id="calc-value"></span>
-      </div>
-
-      <br>
-
-      <div id="gained-value">
-        at current preferred price of $5.20 <br>
-        at current valuation of $1,371,614,938.00
-      </div>
-
-      <div id="value-chart" class="mt-5">
-        <table class="table">
-          <thead>
-            <tr>
-              <th class="text-center" scope="col">Level</th>
-              <th class="text-center" scope="col">Valuation</th>
-              <th class="text-center" scope="col">Growth</th>
-              <th class="text-center" scope="col">Share</th>
-              <th class="text-center" scope="col">Equity</th>
-              <th class="text-center" scope="col">Gained</th>
-            </tr>
-          </thead>
-          <tbody id="chart-rows">
-
-          </tbody>
-        </table>
-      </div>
 
     </div>
+
+
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

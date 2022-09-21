@@ -70,9 +70,9 @@ h3 {
 
 .val1 {
   padding-top: 5px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 500;
-  font-size: 48px;
+  font-size: 50px;
   line-height: 62px;
   color: var(--primary-accent);
   text-transform: uppercase;
@@ -80,7 +80,7 @@ h3 {
 
 .val2 {
   padding-top: 5px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 500;
   font-size: 28px;
   line-height: 36px;
@@ -90,7 +90,7 @@ h3 {
 
 .val3 {
   /* padding-top: 5px; */
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
