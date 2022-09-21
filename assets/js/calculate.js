@@ -104,6 +104,9 @@ function updateContent() {
 
     $("#label_percentage").html(p.toFixed(6)+" % gained");
 
+    $("#loading_bar").css("width", p.toFixed(6)+"%");
+
+
     // console.log(value.toFixed(5).toLocaleString());
     // $("#time-diff").html(formatted);
     // $("#calc-gained").html(shares.toFixed(7));

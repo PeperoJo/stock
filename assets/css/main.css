@@ -111,12 +111,13 @@ h3 {
   height: 7px;
   border-radius: 10px;
   background-color: var(--secondary-font-color);
+  overflow: hidden;
 }
 
 .progress_bar_val {
   position: absolute;
   height: 100%;
-  width: 23%;
+  /* width: 23%; */
   border-radius: 10px;
   background-color: var(--primary-accent);
 }
