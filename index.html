@@ -32,131 +32,136 @@
   <body class="d-none">
 
     <div class="container">
-      <div class="panel">
-        <h1>CHNSP</h1>
+      <div class="row" style="padding-left: 8px; padding-right: 8px;">
 
-        <div class="pt-4" id="tracker_info">
-          <div class="card1 pb-4" id="info_time">
-            <div class="row">
-              <div class="col" id="time_day">
-                <h3>Day</h3>
-                <span class="val2" id="val_time_day">213</span>
+        <div class="panel col-sm col-md-5 col-lg-4">
+          <h1>CHNSP</h1>
+
+          <div class="pt-4" id="tracker_info">
+            <div class="card1 pb-4" id="info_time">
+              <div class="row">
+                <div class="col" id="time_day">
+                  <h3>Day</h3>
+                  <span class="val2" id="val_time_day">213</span>
+                </div>
+                <div class="col" id="time_hour">
+                  <h3>Hrs</h3>
+                  <span class="val2" id="val_time_hour">23</span>
+                </div>
+                <div class="col" id="time_min">
+                  <h3>Min</h3>
+                  <span class="val2" id="val_time_min">39</span>
+                </div>
+                <div class="col" id="time_sec">
+                  <h3>Sec</h3>
+                  <span class="val2" id="val_time_sec">11.9</span>
+                </div>
               </div>
-              <div class="col" id="time_hour">
-                <h3>Hrs</h3>
-                <span class="val2" id="val_time_hour">23</span>
+              <span class="info_label">
+                Since September 12, 2022 09:00
+              </span>
+            </div>
+
+            <div class="card1 pb-4" id="info_value">
+              <div class="row">
+                <div class="col" id="value_latest">
+                  <h3>Gained Value</h3>
+                  <span class="val1" id="val_value_latest">$1,427.1899</span>
+                </div>
               </div>
-              <div class="col" id="time_min">
-                <h3>Min</h3>
-                <span class="val2" id="val_time_min">39</span>
-              </div>
-              <div class="col" id="time_sec">
-                <h3>Sec</h3>
-                <span class="val2" id="val_time_sec">11.9</span>
+              <span class="info_label">
+                TOTAL EQUITY: $239,200
+              </span>
+            </div>
+
+            <div class="card1 pb-4" id="info_progress">
+              <div class="progress_bar">
+                <div class="progress_bar_val">
+                </div>
               </div>
             </div>
-            <span class="info_label">
-              Since September 12, 2022 09:00
-            </span>
-          </div>
 
-          <div class="card1 pb-4" id="info_value">
-            <div class="row">
-              <div class="col" id="value_latest">
-                <h3>Gained Value</h3>
-                <span class="val1" id="val_value_latest">$1,427.1899</span>
+            <div class="card1 pb-4" id="info_share">
+              <div class="row">
+                <div class="col" id="share_gained">
+                  <h3>Gained Shares</h3>
+                  <span class="val2" id="val_share_gained">274.57141</span>
+                </div>
+                <div class="col" id="share_total">
+                  <h3>Gained Value</h3>
+                  <span class="val2" id="val_share_total">46,000</span>
+                </div>
               </div>
+              <span class="info_label" id="label_percentage">
+                0.596 % gained
+              </span>
             </div>
-            <span class="info_label">
-              TOTAL EQUITY: $239,200
-            </span>
-          </div>
 
-          <div class="card1 pb-4" id="info_progress">
-            <div class="progress_bar">
-              <div class="progress_bar_val">
+            <div class="card1" id="info_valuation">
+              <div class="row">
+                <div class="col" id="valuation_current">
+                  <h3>Current Valuation</h3>
+                  <span class="val2" id="val_valuation_current">$1.372B</span>
+                </div>
+                <div class="col" id="valuation_share">
+                  <h3>Share Price</h3>
+                  <span class="val2" id="val_valuation_share">$5.20</span>
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div class="card1 pb-4" id="info_share">
-            <div class="row">
-              <div class="col" id="share_gained">
-                <h3>Gained Shares</h3>
-                <span class="val2" id="val_share_gained">274.57141</span>
-              </div>
-              <div class="col" id="share_total">
-                <h3>Gained Value</h3>
-                <span class="val2" id="val_share_total">46,000</span>
-              </div>
-            </div>
-            <span class="info_label" id="label_percentage">
-              0.596 % gained
-            </span>
-          </div>
-
-          <div class="card1" id="info_valuation">
-            <div class="row">
-              <div class="col" id="valuation_current">
-                <h3>Current Valuation</h3>
-                <span class="val2" id="val_valuation_current">$1.372B</span>
-              </div>
-              <div class="col" id="valuation_share">
-                <h3>Share Price</h3>
-                <span class="val2" id="val_valuation_share">$5.20</span>
-              </div>
-            </div>
-            <span class="info_label">
-              As of 10/07/2021
-            </span>
-          </div>
-        </div>
-
-      </div>
-
-      <hr class="divider"/>
-
-      <div class="panel">
-        <h2>Growth Calculation</h2>
-
-        <div class="pt-4" id="growth_info">
-          
-          <div class="card2 mb-3">
-            <div class="row pb-4">
-              <div class="col growth_title">
-                <h3>Latest</h3>
-                <span class="val3 color-purple">x1.00</span>
-              </div>
-              <div class="col">
-                <h3>Valuation</h3>
-                <span class="val3">$1.372B</span>
-              </div>
-              <div class="col">
-                <h3>Share</h3>
-                <span class="val3">$5.20</span>
-              </div>
-              <div class="col">
-                <h3>Equity</h3>
-                <span class="val3">$1,239K</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col" id="value_latest">
-                <h3>Est. Gained Value</h3>
-                <span class="val2">$1,427.1899</span>
-              </div>
+              <span class="info_label">
+                As of 10/07/2021
+              </span>
             </div>
           </div>
-
-
 
         </div>
 
-      </div>
-      </div>
+        <hr class="divider d-md-none"/>
+
+        <div class="col d-md-block"></div>
+
+        <div class="panel col-sm col-md-6 col-lg-7">
+          <h2>Growth Calculation</h2>
+
+          <div class="pt-4" id="growth_info">
+
+            <div class="card2 mb-3">
+              <div class="row pb-4">
+                <div class="col growth_title">
+                  <h3>Latest</h3>
+                  <span class="val3 color-purple">x1.00</span>
+                </div>
+                <div class="col">
+                  <h3>Valuation</h3>
+                  <span class="val3">$1.372B</span>
+                </div>
+                <div class="col">
+                  <h3>Share</h3>
+                  <span class="val3">$5.20</span>
+                </div>
+                <div class="col">
+                  <h3>Equity</h3>
+                  <span class="val3">$1,239K</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col" id="value_latest">
+                  <h3>Est. Gained Value</h3>
+                  <span class="val2">$1,427.1899</span>
+                </div>
+              </div>
+            </div>
 
 
+
+          </div>
+
+        </div>
+
+      </div>
     </div>
+
+
 
 
 

@@ -75,6 +75,42 @@ function generateTable(){
 
     var row_template = `
       <div class="card2 mb-3">
+        <div class="row">
+          <div class="col-sm-12 col-lg-8">
+            <div class="row pb-4">
+              <div class="col growth_title">
+                <h3>${val.label}</h3>
+                <span class="val3 color-purple">x${multiplier.toFixed(2)}</span>
+              </div>
+              <div class="col">
+                <h3>Valuation</h3>
+                <span class="val3">$${(val.valuation/1000000000).toFixed(3)+"B"}</span>
+              </div>
+              <div class="col">
+                <h3>Share</h3>
+                <span class="val3">$${shareVal}</span>
+              </div>
+              <div class="col">
+                <h3>Equity</h3>
+                <span class="val3">$${FormattedEquity}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-12 col-lg-4">
+            <div class="row">
+              <div class="col" id="value_latest">
+                <h3>Est. Gained Value</h3>
+                <span class="val2">$${USD.format((gainedShares*shareVal))}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    var row_template2 = `
+      <div class="card2 mb-3">
         <div class="row pb-4">
           <div class="col growth_title">
             <h3>${val.label}</h3>
