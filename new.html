@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Stock</title>
+
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="d-none">
+
+    <div class="container">
+      <div class="panel">
+        <h1>CHNSP</h1>
+
+        <div class="pt-4" id="tracker_info">
+          <div class="card1 pb-4" id="info_time">
+            <div class="row">
+              <div class="col" id="time_day">
+                <h3>Day</h3>
+                <span class="val2" id="val_time_day">213</span>
+              </div>
+              <div class="col" id="time_hour">
+                <h3>Hrs</h3>
+                <span class="val2" id="val_time_hour">23</span>
+              </div>
+              <div class="col" id="time_min">
+                <h3>Min</h3>
+                <span class="val2" id="val_time_min">39</span>
+              </div>
+              <div class="col" id="time_sec">
+                <h3>Sec</h3>
+                <span class="val2" id="val_time_sec">11.9</span>
+              </div>
+            </div>
+            <span class="info_label">
+              Since September 12, 2022 09:00
+            </span>
+          </div>
+
+          <div class="card1 pb-4" id="info_value">
+            <div class="row">
+              <div class="col" id="value_latest">
+                <h3>Gained Value</h3>
+                <span class="val1" id="val_value_latest">$1,427.1899</span>
+              </div>
+            </div>
+            <span class="info_label">
+              TOTAL EQUITY: $239,200
+            </span>
+          </div>
+
+          <div class="card1 pb-4" id="info_progress">
+            <div class="progress_bar">
+              <div class="progress_bar_val">
+              </div>
+            </div>
+          </div>
+
+          <div class="card1 pb-4" id="info_share">
+            <div class="row">
+              <div class="col" id="share_gained">
+                <h3>Gained Value</h3>
+                <span class="val2" id="val_share_gained">274.57141</span>
+              </div>
+              <div class="col" id="share_total">
+                <h3>Gained Value</h3>
+                <span class="val2" id="val_share_total">46,000</span>
+              </div>
+            </div>
+            <span class="info_label">
+              0.596 % gained
+            </span>
+          </div>
+
+          <div class="card1" id="info_valuation">
+            <div class="row">
+              <div class="col" id="valuation_current">
+                <h3>Current Valuation</h3>
+                <span class="val2" id="val_valuation_current">$1.372B</span>
+              </div>
+              <div class="col" id="valuation_share">
+                <h3>Share Price</h3>
+                <span class="val2" id="val_valuation_share">$5.20</span>
+              </div>
+            </div>
+            <span class="info_label">
+              As of 10/07/2021
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="divider"/>
+
+      <div class="panel">
+        <h2>Growth Calculation</h2>
+
+        <div class="pt-4" id="growth_info">
+          <div class="card2 mb-3">
+            <div class="row pb-4">
+              <div class="col growth_title">
+                <h3>Latest</h3>
+                <span class="val3 color-purple">x1.00</span>
+              </div>
+              <div class="col">
+                <h3>Valuation</h3>
+                <span class="val3">$1.372B</span>
+              </div>
+              <div class="col">
+                <h3>Share</h3>
+                <span class="val3">$5.20</span>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" id="value_latest">
+                <h3>Est. Gained Value</h3>
+                <span class="val2">$1,427.1899</span>
+              </div>
+            </div>
+            <span class="info_label">
+              TOTAL EQUITY: $239,200
+            </span>
+
+          </div>
+
+          <div class="card2 mb-3">
+            <div class="row pb-4">
+              <div class="col growth_title">
+                <h3>Latest</h3>
+                <span class="val3 color-purple">x1.00</span>
+              </div>
+              <div class="col">
+                <h3>Valuation</h3>
+                <span class="val3">$1.372B</span>
+              </div>
+              <div class="col">
+                <h3>Share</h3>
+                <span class="val3">$5.20</span>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" id="value_latest">
+                <h3>Est. Gained Value</h3>
+                <span class="val2">$1,427.1899</span>
+              </div>
+            </div>
+            <span class="info_label">
+              Estimated Equity: $239,200
+            </span>
+
+          </div>
+
+          <div class="card2 mb-3">
+            <div class="row pb-4">
+              <div class="col growth_title">
+                <h3>Latest</h3>
+                <span class="val3 color-purple">x1.00</span>
+              </div>
+              <div class="col">
+                <h3>Valuation</h3>
+                <span class="val3">$1.372B</span>
+              </div>
+              <div class="col">
+                <h3>Share</h3>
+                <span class="val3">$5.20</span>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" id="value_latest">
+                <h3>Est. Gained Value</h3>
+                <span class="val2">$1,427.1899</span>
+              </div>
+            </div>
+            <span class="info_label">
+              Estimated Equity: $239,200
+            </span>
+
+          </div>
+
+          <div class="card2 mb-3">
+            <div class="row pb-4">
+              <div class="col growth_title">
+                <h3>Latest</h3>
+                <span class="val3 color-purple">x1.00</span>
+              </div>
+              <div class="col">
+                <h3>Valuation</h3>
+                <span class="val3">$1.372B</span>
+              </div>
+              <div class="col">
+                <h3>Share</h3>
+                <span class="val3">$5.20</span>
+              </div>
+              <div class="col">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col" id="value_latest">
+                <h3>Est. Gained Value</h3>
+                <span class="val2">$1,427.1899</span>
+              </div>
+            </div>
+            <span class="info_label">
+              Estimated Equity: $239,200
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+    <!-- <script src="assets/js/auth.js" defer></script> -->
+    <script src="assets/js/auth.js"></script>
+    <script src="assets/js/calculate.js" defer></script>
+    <script src="assets/js/table.js" defer></script>
+
+    <script src="assets/js/numformat.js" defer></script>
+
+
+
+  </body>
+</html>
