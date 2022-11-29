@@ -6,6 +6,12 @@ var valuations = [
     "shareValue" : 5.200
   },
   {
+    "label" : "Latest v2",
+    "hasPassed": true,
+    "valuation" : 1600000000.00,
+    "shareValue" : 5.420
+  },
+  {
     "label" : "Joining",
     "hasPassed": true,
     "valuation" : 1371614938.00,
