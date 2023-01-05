@@ -21,6 +21,11 @@ var valuations = [
     "hasPassed": false,
     "valuation" : 10000000000.00,
     "shareValue" : 0
+  },{
+    "label" : "Let's Go",
+    "hasPassed": false,
+    "valuation" : 15000000000.00,
+    "shareValue" : 0
   },
   {
     "label" : "Nice",
