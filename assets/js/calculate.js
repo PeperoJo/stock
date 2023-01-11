@@ -80,7 +80,7 @@ function calculatePercentage(ms_time){
 }
 
 function shareValues(shares){
-  var value = 5.20 * shares;
+  var value = 5.42 * shares;
   return value
 }
 
